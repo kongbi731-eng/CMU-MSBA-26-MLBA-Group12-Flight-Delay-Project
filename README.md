@@ -103,11 +103,12 @@ Users can access the application through the EC2 public IP.
 ## 7. How to Run Locally
 
 Install dependencies:
-
 ```bash
 pip install -r requirements.txt
+```
 
 Run the application:
+```bash
 streamlit run app/app.py
 ```
 ---
