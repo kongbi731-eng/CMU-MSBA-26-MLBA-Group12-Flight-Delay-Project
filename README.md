@@ -94,7 +94,13 @@ This allows users to quickly estimate delay risk for a given flight.
 The system is deployed using:
 
 - **EC2** to host the Streamlit application  
-- Port **8501** opened for external access  
+
+To deploy on AWS EC2:
+1. Launch EC2 instance
+2. Open port 8501
+3. Upload files using SCP
+4. Run:
+   streamlit run app/app.py --server.port 8501 --server.address 0.0.0.0
 
 Users can access the application through the EC2 public IP.
 
